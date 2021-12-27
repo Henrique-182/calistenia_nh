@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "calistenia_nh",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "calistenia_nh (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        }
+    ]
+}
