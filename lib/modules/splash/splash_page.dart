@@ -10,7 +10,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: AppColors.primary,
+      backgroundColor: AppColors.primaryColor,
       body: Stack(
         children: [
           Positioned(
@@ -23,7 +23,7 @@ class SplashPage extends StatelessWidget {
             bottom: size.height * 0.08,
             left: 0,
             right: 0,
-            child: Text("CALISTENIA NH", textAlign: TextAlign.center, style: TextStyles.splashPageText,),
+            child: Text("CALISTENIA NH", textAlign: TextAlign.center, style: TextStyles.textStyle,),
           ),
         ]
       ),
