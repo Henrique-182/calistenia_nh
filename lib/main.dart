@@ -1,3 +1,4 @@
+import 'package:calistenia_nh/modules/login/login_page.dart';
 import 'package:calistenia_nh/modules/splash/splash_page.dart';
 import 'package:calistenia_nh/shared/themes/app_colors.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +15,9 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Calistenia-NH App',
       theme: ThemeData(
-        primaryColor: AppColors.primary,
+        primaryColor: AppColors.primaryColor,
       ),
-      home: SplashPage(),
+      home: LoginPage(),
     );
   }
 }
