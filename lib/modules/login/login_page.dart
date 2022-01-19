@@ -3,6 +3,7 @@ import 'package:calistenia_nh/shared/themes/app_images.dart';
 import 'package:calistenia_nh/shared/themes/app_styles.dart';
 import 'package:calistenia_nh/shared/widgets/social_login/social_login_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -59,9 +60,21 @@ class _LoginPageState extends State<LoginPage> {
                   Padding(
                     padding: const EdgeInsets.only(top: 70, left: 40, right: 40
                     ),
-                    child: SocialLoginButton(onTap: (){
-                      
-                    },),
+                    child: SocialLoginButton(
+                      onTap: () async{
+                        GoogleSignIn _googleSignIn = GoogleSignIn(
+                          scopes: [
+                            'email',
+                          ],
+                        );
+                        try {
+                          final response = await _googleSignIn.signIn();
+                          print(response);
+                        } catch (error) {
+                          print(error);
+                        }
+                      },
+                    ),
                   )
                 ],
               )
