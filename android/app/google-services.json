@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "767660073541",
+    "project_id": "calistenia-nh",
+    "storage_bucket": "calistenia-nh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767660073541:android:9baa2294fb864328a6f92c",
+        "android_client_info": {
+          "package_name": "com.example.calistenia_nh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767660073541-esovemnnmhv2dbaoavd4fhobmktk06tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.calistenia_nh",
+            "certificate_hash": "b25e076004e5d3df1e346934c557eedb770dbb00"
+          }
+        },
+        {
+          "client_id": "767660073541-3n2jdfu2av53ar3gc385ce1rdsrmhbk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo8E9pIjBU5TscYwPG-nkRORVoFRFuo64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767660073541-3n2jdfu2av53ar3gc385ce1rdsrmhbk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
