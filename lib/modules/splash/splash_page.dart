@@ -1,3 +1,4 @@
+import 'package:calistenia_nh/shared/auth/auth_controller.dart';
 import 'package:calistenia_nh/shared/themes/app_colors.dart';
 import 'package:calistenia_nh/shared/themes/app_images.dart';
 import 'package:calistenia_nh/shared/themes/app_styles.dart';
@@ -8,7 +9,11 @@ class SplashPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final authController = AuthController();
+    authController.currentUser(context);
+    
     final size = MediaQuery.of(context).size;
+
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
       body: Stack(

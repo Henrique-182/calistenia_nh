@@ -1,3 +1,4 @@
+import 'package:calistenia_nh/modules/login/login_controller.dart';
 import 'package:calistenia_nh/shared/themes/app_colors.dart';
 import 'package:calistenia_nh/shared/themes/app_images.dart';
 import 'package:calistenia_nh/shared/themes/app_styles.dart';
@@ -12,6 +13,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final controller = LoginController();
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -59,9 +61,11 @@ class _LoginPageState extends State<LoginPage> {
                   Padding(
                     padding: const EdgeInsets.only(top: 70, left: 40, right: 40
                     ),
-                    child: SocialLoginButton(onTap: (){
-                      
-                    },),
+                    child: SocialLoginButton(
+                      onTap: () {
+                        controller.googleSignIn(context);
+                      },
+                    ),
                   )
                 ],
               )
